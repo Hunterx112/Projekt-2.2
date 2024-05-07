@@ -1,0 +1,121 @@
+/* General styling */
+body {
+    background-image: url('Lavet\ backgrund\ 3\ rød.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  .pla {
+    position: absolute;
+    font-size: 45px;
+    background-color: black; /* Change the background color */
+    width: 16%; /* Change the width of the background */
+    padding: 70px; /* Add padding to the background */
+    right: 38%;
+    margin-top: 16%;
+  }
+h1 {
+    position: absolute;
+    margin-top: -10%;
+    right: 15%;
+    color:darkred;
+}
+h2 {
+    position: absolute;
+    font-size: 25px;
+    margin-top: 7%;
+    right: 15%;
+    color:darkred;
+}
+.prøv {
+    position: absolute;
+    margin-top: 30%;
+    margin-left: 47%;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+@media only screen and (max-width: 1200px) {
+    .pla {
+        position: absolute;
+        font-size: 5px;
+        background-color: black; /* Change the background color */
+        width: 16%; /* Change the width of the background */
+        padding: 70px; /* Add padding to the background */
+        right: 38%;
+        margin-top: 16%;
+      }
+    h1 {
+        position: absolute;
+        font-size: 40px;
+        top: 40%;
+        color:darkred;
+    }
+    h2 {
+        position: absolute;
+        top: 46%;
+        right: 15%;
+        color:darkred;
+    }
+    .prøv {
+        position: absolute;
+        top: 12%;
+        left: -3%;
+        background-color: black;
+        color: white;
+        font-size: 15px;
+    }
+
+    
+    body { 
+        background-size: contain;
+    }
+
+}
+@media only screen and (max-width: 768px) {
+.pla {
+    position: absolute;
+    font-size: 45px;
+    background-color: black; /* Change the background color */
+    width: 14%; /* Change the width of the background */
+    padding: 40px; /* Add padding to the background */
+    right: 36%;
+    margin-top: 16%;
+  }
+h1 {
+    position: absolute;
+    font-size: 24px;
+    margin-top: -10%;
+    right: 20%;
+    color:darkred;
+}
+h2 {
+    position: absolute;
+    font-size: 12px;
+    margin-top: 7%;
+    right: 8%;
+    color:darkred;
+}
+.prøv {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 45%;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+
+body { 
+    background-size: contain;
+}
+}

@@ -1,0 +1,321 @@
+/* General styling */
+body {
+    background-image: url('Lavet\ backgrund.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  .button1 {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    top: 200%; /* Adjust the percentage value to move the button down */
+    left: 200%;
+    transform: translateX(-50%); /* Center the button horizontally */
+  }
+  .button {
+    position: absolute;
+    color: #15e31c;
+    z-index: 1;
+  }
+
+  button:active {
+    background-color: red;
+  }
+  
+  /* Header styling */
+  header {
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0.5%;
+    left: 35px;
+    color: #4CAF50;
+  }
+  
+  h3, h4, h5, h6, p {
+    color: #4CAF50;
+    font-size: 40px;
+    position: absolute;
+  }
+  
+  h3, h4, h5, h6, p {
+    left: 4%;
+  }
+
+  h3 { margin-top: 8%; }
+  h4 { margin-top: 11%; }
+  h5 { margin-top: 14%; }
+  h6 { margin-top: 17%; }
+  p { margin-top: 20%; }
+
+  /* billeder */
+  .nøgle {
+    position: fixed;
+    right: 44%;
+    margin-top: 15%;
+    position: absolute;
+  }
+  
+  .logo {
+    position: fixed;
+    right: 3%;
+    width: 100px;
+  }
+  
+  .lås {
+    right: 25%;
+    margin-top: 6%;
+    position: absolute;
+  }
+  
+  .Diagram {
+    position: absolute;
+    right: 31%;
+    margin-top: 33%;
+    width: 600px;
+    height: auto;
+  }
+  
+  /* P section */
+  ul {
+    color: #15e31c;
+    position: absolute;
+    left: 71%;
+    margin-top: 7%;
+    font-size: 18px;
+  }
+  
+  li {
+    display: block;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+  
+ 
+  
+  /* Media queries for responsiveness */
+  @media screen and (max-width: 1200px) {
+    .button1 {
+      position: absolute;
+      width: 100px;
+      height: 30px;
+      top: 9%; /* Adjust the percentage value to move the button down */
+      left: 50%;
+      transform: translateX(-50%); /* Center the button horizontally */
+    }
+    .button {
+      position: absolute;
+      color: #15e31c;
+      z-index: 1;
+    }
+  
+    button:active {
+      background-color: red;
+    }
+    
+    /* Header styling */
+    header {
+      background-color: transparent;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      position: fixed;
+      top: -2.5%;
+      left: 35px;
+      color: #4CAF50;
+    }
+    
+    h3, h4, h5, h6, p {
+      color: #4CAF50;
+      font-size: 28px;
+      position: absolute;
+    }
+    
+    h3, h4, h5, h6, p {
+      left: 4%;
+    }
+  
+    h3 { margin-top: 4%; }
+    h4 { margin-top: 7%; }
+    h5 { margin-top: 10%; }
+    h6 { margin-top: 13%; }
+    p { margin-top: 16%; }
+  
+    /* billeder */
+    .nøgle {
+      position: absolute;
+      width: 150px;
+      height: auto;
+      right: 44%;
+      margin-top: 12%;
+      position: absolute;
+    }
+    
+    .logo {
+      position: absolute;
+      top: 1%;
+      right: 3%;
+      width: 70px;
+    }
+    
+    .lås {
+      width: 300px;
+      height: auto;
+      right: 25%;
+      margin-top: 4%;
+      position: absolute;
+    }
+    
+    .Diagram {
+      position: absolute;
+      right: 29%;
+      margin-top: 30%;
+      width: 320px;
+      height: auto;
+    }
+    
+    /* P section */
+    ul {
+      color: #15e31c;
+      position: absolute;
+      left: 69%;
+      margin-top: -4%;
+      font-size: 12px;
+    }
+    
+    li {
+      display: block;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+    
+    body{
+      background-size: contain;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .button1 {
+      position: absolute;
+      width: 100px;
+      height: 30px;
+      top: 6%; /* Adjust the percentage value to move the button down */
+      left: 50%;
+      transform: translateX(-50%); /* Center the button horizontally */
+    }
+    .button {
+      position: absolute;
+      color: #15e31c;
+      z-index: 1;
+    }
+  
+    button:active {
+      background-color: red;
+    }
+    
+    /* Header styling */
+    header {
+      background-color: transparent;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    header h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+      position: fixed;
+      top: -2.5%;
+      left: 2%;
+      color: #4CAF50;
+    }
+    
+    h3, h4, h5, h6, p {
+      color: #4CAF50;
+      font-size: 20px;
+      position: absolute;
+    }
+    
+    h3, h4, h5, h6, p {
+      left: 1.5%;
+    }
+  
+    h3 { margin-top: -14%; }
+    h4 { margin-top: -11%; }
+    h5 { margin-top: -8%; }
+    h6 { margin-top: -5%; }
+    p { margin-top: -2%; }
+  
+    /* billeder */
+    .nøgle {
+      position: absolute;
+      width: 100px;
+      height: auto;
+      right: 44%;
+      margin-top: 8%;
+      position: absolute;
+    }
+    
+    .logo {
+      position: absolute;
+      top: 1%;
+      right: 3%;
+      width: 40px;
+    }
+    
+    .lås {
+      width: 150px;
+      height: auto;
+      right: 30%;
+      margin-top: 2%;
+      position: absolute;
+    }
+    
+    .Diagram {
+      position: absolute;
+      right: 28%;
+      margin-top: 26%;
+      width: 220px;
+      height: auto;
+    }
+    
+    /* P section */
+    ul {
+      color: #15e31c;
+      position: absolute;
+      left: 68%;
+      margin-top: -20%;
+      font-size: 7.5px;
+    }
+    
+    li {
+      display: block;
+      margin-bottom: 10px;
+      line-height: 1;
+    }
+    
+    body{
+      background-size: contain;
+    }
+  }
+  

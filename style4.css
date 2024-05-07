@@ -1,0 +1,182 @@
+/* General styling */
+body {
+    background-image: url('Elback\ 4.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    max-width: 100%;
+  }
+  .pla {
+    position: absolute;
+    font-size: 55px;
+    color: red;
+    background-color: white; /* Change the background color */
+    width: 25%; /* Change the width of the background */
+    padding: 37px; /* Add padding to the background */
+    right: 33%;
+    margin-top: 16%;
+}
+h1 {
+    position: absolute;
+    left: 10%;
+    margin-top: -5%;
+    color: red;
+    font-size: 40px;
+}
+.Elman {
+    margin-top: 18%;
+    width: 350px;
+    height: auto;
+}
+.pil {
+    position: absolute;
+    margin-top: 18%;
+    left: 20%;
+    width: 200px;
+    height: auto;
+}
+p, p2, p3, p4 {
+    width: 55%;
+    background-size: cover;
+    background-color: green;
+}
+p {
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 27%;
+    font-size: 24px;
+    color: white;
+}
+
+p2 {
+    position: absolute;
+    margin-left: 30%;
+    font-size: 24px;
+    margin-top: 30%;
+    color: white;
+}
+p3 {
+    position: absolute;
+    margin-left: 30%;
+    font-size: 24px;
+    margin-top: 34%;
+    color: white;
+}
+p4 {
+    position: absolute;
+    margin-left: 30%;
+    font-size: 24px;
+    margin-top: 38%;
+    color: white;
+}
+.A, .B, .C, .D {
+    color: red
+}
+
+@media screen and (max-width: 1200px) {
+    .pla {
+        font-size: 40px;
+        width: 30%;
+        right: 35%;
+        padding: 20px;
+        margin-top: 17%;
+    }
+    h1 {
+        font-size: 20px;
+        left: 20%;
+        margin-top: -5%;
+    }
+
+    .Elman {
+        margin-top: 25%;
+        width: 134px;
+    }
+
+    .pil {
+        margin-top: 18%;
+        width: 100px;
+        left: 15%;
+    }
+
+    p, p2, p3, p4 {
+        width: 30%;
+        font-size: 16px;
+    }
+
+    p {
+        margin-left: 30%;
+        margin-top: 27%;
+    }
+
+    p2 {
+        margin-left: 30%;
+        margin-top: 34.5%;
+    }
+
+    p3 {
+        margin-left: 30%;
+        margin-top: 42%;
+    }
+
+    p4 {
+        margin-left: 30%;
+        margin-top: 50%;
+    }
+    body {
+        background-size: contain;
+    }
+}
+@media screen and (max-width: 768px) {
+    .pla {
+        font-size: 40px;
+        width: 50%;
+        right: 20%;
+        padding: 20px;
+        margin-top: 10%;
+    }
+    h1 {
+        font-size: 20px;
+        left: 20%;
+        margin-top: -5%;
+    }
+
+    .Elman {
+        margin-top: 25%;
+        width: 80px;
+    }
+
+    .pil {
+        margin-top: 22%;
+        width: 50px;
+        left: 14%;
+    }
+
+    p, p2, p3, p4 {
+        width: 30%;
+        font-size: 10px;
+    }
+
+    p {
+        margin-left: 30%;
+        margin-top: 25%;
+    }
+
+    p2 {
+        margin-left: 30%;
+        margin-top: 33%;
+    }
+
+    p3 {
+        margin-left: 30%;
+        margin-top: 41%;
+    }
+
+    p4 {
+        margin-left: 30%;
+        margin-top: 49%;
+    }
+    body {
+        background-size: contain;
+    }
+}

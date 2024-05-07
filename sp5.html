@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hvad er Phishing</title>
+  <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+ <div>
+  <section class="pla">
+  <h1>Hvad skal du gøre, hvis du tror, at din computer er blevet inficeret med malware?</h1>
+  </section>
+   
+   <p><a href="#" class="A" data-question="5">A</a> Kør en antivirusscanning.</p>
+   <p2><a href="#" class="B" data-question="5">B</a> Skift dine adgangskoder.</p2>
+   <p3><a href="#" class="C" data-question="5">C</a> Kontakt din bank eller dit kreditkortselskab</p3>
+   <p4><a href="#" class="D" data-question="5">D</a>Alle ovenstående.</p4>
+ 
+  </div>
+   <img src="pil1.png" alt="pil1" class="pil">
+   <img src="ELman 3.png" alt="Elman" class="Elman">
+  <script>
+    // Define variables to keep track of user's answers
+    let userAnswers = [];
+
+    // Function to handle user's answer selection
+    function handleAnswer(answer) {
+        // Retrieve previously stored answers from sessionStorage
+        let userAnswers = JSON.parse(sessionStorage.getItem('userAnswers')) || [];
+        // Store the current answer
+        userAnswers.push(answer);
+        // Store the updated answers back to sessionStorage
+        sessionStorage.setItem('userAnswers', JSON.stringify(userAnswers));
+        // Check the results after answer selection
+        checkResults();
+    }
+
+    // Function to check the results
+    function checkResults() {
+        // Retrieve user's answers from sessionStorage
+        let userAnswers = JSON.parse(sessionStorage.getItem('userAnswers')) || [];
+        // Check if all questions are answered
+        if (userAnswers.length === 5) {
+            const correctAnswers = ['C', 'D', 'B', 'A', 'D']; // Example correct answers
+            const correctCount = userAnswers.filter((answer, index) => answer === correctAnswers[index]).length;
+            if (correctCount >= 3) {
+                // Redirect to Won page
+                window.location.href = 'won.html';
+            } else {
+                // Redirect to Lost page
+                window.location.href = 'lost.html';
+            }
+        }
+    }
+
+    // Add event listeners to anchor tags in each answer
+    const answerLinks = document.querySelectorAll('a.A, a.B, a.C, a.D');
+    answerLinks.forEach(link => {
+        link.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent default anchor behavior
+            const answer = this.innerText; // Get the selected answer
+            handleAnswer(answer); // Store the answer and check results
+        });
+    });
+  </script>
+</body>
+</html>
